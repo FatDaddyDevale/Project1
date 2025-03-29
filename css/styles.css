@@ -1,16 +1,266 @@
-h1{
-  background-color: yellow;
+/*Global Resets & Base Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul{
-  background-color: #10ad54;
-  color: blue;
-  font-size: 50px;
-  border: dashed;
-  width: 50%;
-  font-family: verdana, Arial;
+body {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fdfdfd;
 }
 
-li{
-  font-size: 50%;
+/* Link Styling */
+a {
+  text-decoration: none;
+  color: #f39c12;
+}
+a:hover {
+  color: #d35400;
+}
+
+
+
+
+/*Navigation (Common to All Pages)*/
+#main-nav {
+  background-color: rgb(69, 169, 222);
+}
+
+#main-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  padding: 10px 0;
+}
+
+#main-nav ul li {
+  margin: 0 15px;
+}
+
+#main-nav a {
+  display: block;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+}
+
+#main-nav a:hover {
+  color: yellow;
+  text-shadow: 1px 0 10px #fc0;
+}
+
+
+
+
+/*Header (Common)*/
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+header img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+h1 {
+  background-color: yellow; 
+  padding: 10px;
+  margin: 20px 0;
+}
+
+
+
+
+/* Header paragraph */
+header p {
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+
+
+
+/* div & section wrappers */
+div,
+section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+
+
+
+/* Section Headings */
+h2, h3 {
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  color: #d35400;
+}
+
+
+
+
+
+/* Work Experience & Education Headings */
+h4 {
+  margin: 20px 0 5px;
+  font-size: 24px;
+  color: #d35400;
+}
+h5 {
+  font-size: 18px;
+  color: #888;
+  margin-bottom: 5px;
+}
+h6 {
+  font-size: 16px;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Lists (used in work, education, certifications) */
+ul {
+  margin: 10px 0 20px;
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Details containers for education */
+#college1_details, 
+#college2_details {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+
+
+
+/*Projects Page Specific*/
+#project_section h2 {
+  font-size: 24px;
+  color: #d35400;
+  margin: 20px 0 10px;
+}
+#project_section ul {
+  list-style: none;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+#project_section li {
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Button for viewing project details */
+button {
+  padding: 8px 15px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #d35400;
+}
+
+
+
+
+/* Skills Section */
+#skills_section ul {
+  list-style: none;
+  text-align: left;
+  margin: 20px 0;
+  padding-left: 0;
+}
+#skills_section ul li {
+  display: inline-block;
+  margin: 10px 15px;
+}
+#skills_section img {
+  width: 50px;
+  height: auto;
+}
+
+
+
+
+/* Profile image */
+#image-FDD {
+  display: block;
+  float: right;
+  max-width: 250px;
+  margin: 0px;
+  padding: 0 0 20px 20px;
+  border-radius: 30% 0% 50% 70%;
+}
+
+
+
+
+/*Footer (Common)*/
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+footer a {
+  color: #ccc;
+  margin: 0 10px;
+}
+footer a:hover {
+  color: #f39c12;
+}
+#copyright {
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #999;
+}
+
+
+
+
+/*Responsive Adjustments*/
+@media (max-width: 768px) {
+  #main-nav a {
+    font-size: 30px;
+    padding: 15px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  header img, #image-FDD {
+    max-width: 120px;
+  }
 }
